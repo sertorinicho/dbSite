@@ -9,7 +9,7 @@ layout: "layouts/base.njk"
   {% for post in collections.all %}
     {% if post.inputPath.startsWith('./posts/') %}
       <li>
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
+        <a href="{{ '/posts/' | url }}">{{ post.data.title }}</a>
       </li>
     {% endif %}
   {% endfor %}

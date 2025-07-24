@@ -1,5 +1,6 @@
 module.exports = function(eleventyConfig) {
   return {
+	pathPrefix: "/dbSite/",
     dir: {
       input: ".",
       includes: "_includes",
